@@ -12,7 +12,6 @@ const Form = () => {
   }
   const formHandler = (event) => {
     event.preventDefault();
-    console.log(name1 + " " + name2);
   };
 
   return (

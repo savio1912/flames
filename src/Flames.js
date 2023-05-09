@@ -1,3 +1,5 @@
+import Result from "./Result";
+
 const Flames = (props) => {
   function Unique_Count(name1, name2) {
     name1 = name1.toLowerCase().replace(/\s/g, "");
@@ -6,8 +8,6 @@ const Flames = (props) => {
     let n2 = (name2.match(/ /g) || []).length;
     name1 = name1.replace(/\s/g, "").substring(0, name1.length - n1);
     name2 = name2.replace(/\s/g, "").substring(0, name2.length - n2);
-    console.log(name1);
-    console.log(name2);
     let name1_count = {};
     let name2_count = {};
     let Count = 0;
@@ -52,6 +52,11 @@ const Flames = (props) => {
   const count = Unique_Count(name1, name2);
   const ch = flames(count);
 
-  return <h1>Result{ch}</h1>;
+  return (
+    <>
+      <h1>Result</h1>
+      <Result result={ch} />
+    </>
+  );
 };
 export default Flames;
