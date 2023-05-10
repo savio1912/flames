@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Navbar from "./Navbar.js";
 import Flames from "./Flames";
 
 const Form = () => {
@@ -16,7 +17,7 @@ const Form = () => {
 
   return (
     <>
-      {" "}
+      <Navbar />
       <form onSubmit={formHandler}>
         <label htmlFor="name1">Name 1</label>
         <input

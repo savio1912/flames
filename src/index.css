@@ -12,7 +12,15 @@ nav ul {
 nav li {
   float: left;
 }
-
+.sbtn {
+  margin: 100px;
+  font-size: 50px;
+  width: 600px;
+  height: 100px;
+}
+.btn-li {
+  list-style-type: none;
+}
 nav li a {
   display: block;
   color: white;
@@ -23,4 +31,9 @@ nav li a {
 
 nav li a:hover {
   background-color: #111;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
