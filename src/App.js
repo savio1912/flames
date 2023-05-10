@@ -6,10 +6,19 @@ import Dashboard from "./Dashboard.js";
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/flames" element={<Form />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/flames" element={<Form />} />
+          {/* <Route
+            path="/result"
+            element={
+              <Flames name1={n1.toLowerCase()} name2={n2.toLowerCase()} />
+            }
+          /> */}
+        </Routes>
+      </main>
+      <footer className="footer">All rights reserved</footer>
     </BrowserRouter>
   );
 };
