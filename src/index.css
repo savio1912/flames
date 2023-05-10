@@ -18,6 +18,10 @@ nav li {
   width: 600px;
   height: 100px;
 }
+.footer {
+  text-align: center;
+  margin-top: 40px;
+}
 .btn-li {
   list-style-type: none;
 }
@@ -36,4 +40,12 @@ nav li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.form {
+  margin-left: 550px;
+  margin-top: 200px;
+}
+.btn-warning {
+  margin-top: 20px;
+  margin-left: 150px;
 }
