@@ -1,14 +1,17 @@
 import { useState } from "react";
 import Navbar from "./Navbar.js";
 import Flames from "./Flames.js";
+import { Helmet } from "react-helmet-async";
 const Form = () => {
   const [showComponent, setShowComponenet] = useState(false);
   const [name1, setName1] = useState("");
   const [name2, setName2] = useState("");
   function eventHandler1(event) {
+    setShowComponenet(false);
     setName1(event.target.value);
   }
   function eventHandler2(event) {
+    setShowComponenet(false);
     setName2(event.target.value);
   }
   const formHandler = (event) => {
@@ -18,7 +21,17 @@ const Form = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Flames</title>
+      </Helmet>
       <Navbar />
+      {showComponent && (
+        <Flames
+          name1={name1.toLowerCase()}
+          name2={name2.toLowerCase()}
+          className="flames"
+        />
+      )}
       <div className="container-md form">
         <form onSubmit={formHandler}>
           <div className="row">
@@ -58,13 +71,6 @@ const Form = () => {
           </div>
         </form>
       </div>
-      {showComponent && (
-        <Flames
-          name1={name1.toLowerCase()}
-          name2={name2.toLowerCase()}
-          className="flames"
-        />
-      )}
     </>
   );
 };

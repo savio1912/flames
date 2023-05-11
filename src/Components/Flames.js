@@ -54,7 +54,6 @@ const Flames = (props) => {
 
   return (
     <>
-      <h1>Result</h1>
       <Result result={ch} />
     </>
   );

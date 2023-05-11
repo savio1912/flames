@@ -1,7 +1,7 @@
 const Result = (props) => {
   const { result } = props;
   return (
-    <>
+    <div className="result">
       {result === "F" ? (
         <h1>Congrats you both are friends</h1>
       ) : result === "L" ? (
@@ -17,7 +17,7 @@ const Result = (props) => {
       ) : (
         <h1>Nothing</h1>
       )}
-    </>
+    </div>
   );
 };
 export default Result;

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Form from "./Form.js";
+import Form from "./Components/Form.js";
 import "./index.css";
-import Dashboard from "./Dashboard.js";
+import Dashboard from "./Components/Dashboard.js";
 
 const App = () => {
   return (
