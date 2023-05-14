@@ -2,7 +2,9 @@ nav {
   background-color: #333;
   overflow: hidden;
 }
-
+.sec {
+  background-color: #eee;
+}
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -52,4 +54,10 @@ nav li a:hover {
 .btn-warning {
   margin-top: 20px;
   margin-left: 90px;
+}
+body {
+  background-color: aliceblue;
+}
+form {
+  width: 400px;
 }
