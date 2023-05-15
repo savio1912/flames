@@ -2,9 +2,9 @@
 
 # dependencies
 /node_modules
-/src/.env
 /.pnp
 .pnp.js
+/src/Auth/CONSTANT.js
 
 # testing
 /coverage
